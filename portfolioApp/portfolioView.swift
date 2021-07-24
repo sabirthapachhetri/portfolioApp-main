@@ -9,21 +9,18 @@ import SwiftUI
 
 struct portfolioView: View {
     
-    @State var datas: [StockData] = []
+    let stockData: [StockData] = Bundle.main.decode("nepse.json")
     var body: some View {
-        List(datas) { data in
+        List(stockData) { data in
             VStack {
-                Text(data.companyName)
-                Text(String(data.closingPrice))
+                Text(data.securityName)
+//                Text(String(data.closingPrice))
 
             }
-        }        .onAppear() {
-            Api().loadData { (datas) in
-                self.datas = datas
+        }
             }
         }
-    }
-}
+
 
 struct portfolioView_Previews: PreviewProvider {
     static var previews: some View {
