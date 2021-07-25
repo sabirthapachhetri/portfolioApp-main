@@ -8,18 +8,40 @@
 import SwiftUI
 
 struct portfolioView: View {
-    
-    let stockData: [StockData] = Bundle.main.decode("nepse.json")
+    @State var models: [StockData] = []
+//    let stockData: [StockData] = Bundle.main.decode("data.json")
     var body: some View {
-        List(stockData) { data in
-            VStack {
-                Text(data.securityName)
-//                Text(String(data.closingPrice))
+        HStack {
+            List (models) { (model) in
+                VStack{
+                    Text(model.symbol ?? "").bold()
+                    Text(model.securityName ?? "")
+                    Text(String(model.lastTradedPrice ?? 0.0))
+                }
+               
+            }
+        }.onAppear(perform: {
+            
+            guard let url: URL = Bundle.main.url(forResource: "data", withExtension: "json") else {
+                print("data.json not found")
+                return
+            }
+             
+            do {
+                 
+                let data: Data = try Data(contentsOf: url)
+                 
+                self.models = try JSONDecoder().decode([StockData].self, from: data)
+                 
+            } catch {
+                print(error.localizedDescription)
+            }
+         
+        });
+            }
+        }
 
-            }
-        }
-            }
-        }
+
 
 
 struct portfolioView_Previews: PreviewProvider {

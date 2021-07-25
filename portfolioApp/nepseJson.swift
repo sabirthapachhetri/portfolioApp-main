@@ -4,13 +4,26 @@
 //
 //  Created by Sabir's MacBook on 7/24/21.
 //
+//
+//import Foundation
+//
+//struct StockData: Codable {
+////  let id = UUID()
+//  var securityID: String
+//  var securityName: String
+//  var symbol: String
+//  var lastTradedPrice: Double
+//  var percentageChange: Double
+//  var previousClose: Double
+//
+//}
+class StockData: Codable, Identifiable {
 
-import Foundation
+      var securityID: String? = ""
+      var securityName: String? = ""
+      var symbol: String? = ""
+      var lastTradedPrice: Double? = 0.0
+      var percentageChange: Double? = 0.0
+      var previousClose: Double? = 0.0
 
-struct StockData: Decodable {
-    let id: Int
-    let symbol: String
-    let securityName: String
-    let closePrice: Double
-    let previousDayClosePrice: Double
 }
