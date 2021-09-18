@@ -15,7 +15,6 @@
 		5CA37F8826975C3E008884B9 /* portfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA37F8726975C3E008884B9 /* portfolioView.swift */; };
 		5CA37F8A26975D31008884B9 /* transactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA37F8926975D31008884B9 /* transactionView.swift */; };
 		5CA87B1B26AD95D1000BB400 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CA87B1A26AD95D1000BB400 /* data.json */; };
-		5CA87B1D26AD9749000BB400 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA87B1C26AD9749000BB400 /* extension.swift */; };
 		5CDDAAA8269178B800D5C1CB /* portfolioAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDDAAA7269178B800D5C1CB /* portfolioAppApp.swift */; };
 		5CDDAAAA269178B800D5C1CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDDAAA9269178B800D5C1CB /* ContentView.swift */; };
 		5CDDAAAC269178BB00D5C1CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CDDAAAB269178BB00D5C1CB /* Assets.xcassets */; };
@@ -33,7 +32,6 @@
 		5CA37F8726975C3E008884B9 /* portfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = portfolioView.swift; sourceTree = "<group>"; };
 		5CA37F8926975D31008884B9 /* transactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transactionView.swift; sourceTree = "<group>"; };
 		5CA87B1A26AD95D1000BB400 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
-		5CA87B1C26AD9749000BB400 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		5CDDAAA4269178B800D5C1CB /* portfolioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = portfolioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CDDAAA7269178B800D5C1CB /* portfolioAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = portfolioAppApp.swift; sourceTree = "<group>"; };
 		5CDDAAA9269178B800D5C1CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 				5C9203302692CED20043E37A /* totalBalance.swift */,
 				5CEACFCA26AC74CE005F09C0 /* nepseJson.swift */,
 				5CA87B1A26AD95D1000BB400 /* data.json */,
-				5CA87B1C26AD9749000BB400 /* extension.swift */,
 				5CDDAAAB269178BB00D5C1CB /* Assets.xcassets */,
 				5CDDAAB0269178BB00D5C1CB /* Info.plist */,
 				5CDDAAAD269178BB00D5C1CB /* Preview Content */,
@@ -175,7 +172,6 @@
 				5CDDAAAA269178B800D5C1CB /* ContentView.swift in Sources */,
 				5C9203332692CF360043E37A /* header.swift in Sources */,
 				5CEACFCB26AC74CE005F09C0 /* nepseJson.swift in Sources */,
-				5CA87B1D26AD9749000BB400 /* extension.swift in Sources */,
 				5CA37F8426975094008884B9 /* tabView.swift in Sources */,
 				5CA37F8826975C3E008884B9 /* portfolioView.swift in Sources */,
 				5CDDAAA8269178B800D5C1CB /* portfolioAppApp.swift in Sources */,
