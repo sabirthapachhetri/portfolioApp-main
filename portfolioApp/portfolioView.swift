@@ -4,26 +4,36 @@ import SwiftUI
 struct portfolioView: View {
     @State var models: [StockData] = []
     var body: some View {
+        
         HStack {
             List (models) { (model) in
                 VStack{
                     HStack{
                         Text(model.symbol ?? "").bold()
-                            .frame(width: 168, height: 38,alignment: .leading)
-                            .offset(x: 20, y: 0)
+                            .frame(width: 128, height: 38,alignment: .leading)
+                            .offset(x: 100, y: 0)
     //                    Text(model.securityName ?? "")
+                        HStack{
+                            if (model.percentageChange ?? 0.0 <= 0.0) {
+                                Image("miniRed")
+                            }
+                            else {
+                                Image("miniGreen")
+                            }
+        
+                        }
+                        .offset(x: 50, y: 0)
                         
-                        if (model.percentageChange ?? 0.0 <= 0.0) {
-                            Image("miniRed")
-                        }
-                        else {
-                            Image("miniGreen")
-                        }
+                        
                         Text(String(model.lastTradedPrice ?? 0.0))
-                            .frame(width: 150, height: 38,alignment: .leading)
-                            .offset(x: 90, y: 0)
-                            
+                            .frame(width: 150, height: 38)
+                            .offset(x: 20, y: 0)
+                        Image("jbblLogo")
+                            .resizable()
+                            .frame(width: 28, height: 25)
+                            .offset(x: -350, y: 0)
                     }
+                    
                 }
            
                 .frame(width: 380, height: 66)
